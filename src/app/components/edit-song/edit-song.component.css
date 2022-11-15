@@ -1,0 +1,11 @@
+.card {
+    background: linear-gradient(180deg,#3280a7 0,#41bae7 31%,#41bae7 37%,#2a3e71 100%);
+}
+.card-header {
+    font-family: built_titling_sb;
+    font-size: 35px;
+    padding-left: 35px;
+}
+.card-body {
+    padding: 25px 150px;
+}

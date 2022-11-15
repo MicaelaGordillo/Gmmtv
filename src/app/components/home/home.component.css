@@ -1,0 +1,22 @@
+h2 {
+    font-family: built_titling_sb;
+    font-size: 45px;
+}
+p {
+    font-size: 18px;
+}
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion{
+    display: grid; 
+    grid-template-columns: 47% 47%; 
+    gap: 6%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.informacion {
+    padding: 25px 35px;
+}

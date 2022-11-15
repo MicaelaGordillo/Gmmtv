@@ -1,0 +1,10 @@
+<div class="series" *ngIf="series">
+    <div class="card" *ngFor="let s of series; let iControl = index">
+        <img class="card-img-top" src="{{s.poster}}" alt={{s.title}}>
+        <div class="card-body">
+          <h4 class="card-title">{{s.title}}</h4>
+          <a routerLink="/edit-series/{{s.serie_id}}">Editar</a> | 
+          <a (click)="borrarSerie(s.serie_id, iControl)">Eliminar</a>
+        </div>
+    </div>
+</div>

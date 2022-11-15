@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-header">
+        EDITAR CANCIÓN
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formularioEditarCancion" (ngSubmit)="editarDatosCancion()">
+            <div *ngIf="src" style="display:flex; justify-content: center;">
+                <iframe style="border-radius: 10px;" width="600" height="360" [src]="src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Título de la canción:</label>
+                <input type="text" class="form-control" formControlName="name" maxlength="800" placeholder="Ingrese el título de la canción">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Link de la canción:</label>
+                <input type="text" class="form-control" formControlName="link" maxlength="2000" placeholder="Ingrese el link para la canción">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Descripción</label>
+                <textarea style="resize: none;" class="form-control" formControlName="description" rows="11" maxlength="2000"></textarea>
+            </div>
+            <div class="btn-group" role="group" aria-label="" style="display: flex; justify-content: end;">
+                <button type="submit" class="btn btn-success">Actualizar</button>
+                <button type="button" class="btn btn-primary" routerLink="/songs">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
