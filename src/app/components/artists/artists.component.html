@@ -1,1 +1,10 @@
-<p>artists works!</p>
+<div class="artistas" *ngIf="artistas">
+    <div class="card" *ngFor="let a of artistas; let iControl = index">
+        <img class="card-img-top" src="{{a.picture}}" alt={{a.name}}>
+        <div class="card-body">
+          <h4 class="card-title">{{a.name}}</h4>
+          <a routerLink="/edit-artists/{{a.artist_id}}">Editar</a> | 
+          <a (click)="borrarArtista(a.artist_id, iControl)">Eliminar</a>
+        </div>
+    </div>
+</div>

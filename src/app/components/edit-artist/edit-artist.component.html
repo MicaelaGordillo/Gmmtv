@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-header">
+        EDITAR ARTISTA
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formularioEditarArtista" (ngSubmit)="editarDatosArtista()">
+            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre del artista:</label>
+                        <input type="text" class="form-control" formControlName="name" maxlength="200" placeholder="Escribe el nombre del artista">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha de nacimiento:</label>
+                        <input type="text" class="form-control" formControlName="date_of_birth" maxlength="100" placeholder="Ejemplo: 27-Diciembre-1997 (24 Años)">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Lugar de nacimiento:</label>
+                        <input type="text" class="form-control" formControlName="place_of_birth" maxlength="100" placeholder="Ejemplo: Nakhon Pathom, Tailandia">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Estatura (cm):</label>
+                        <input type="text" class="form-control" formControlName="height" maxlength="3" placeholder="Altura del artista" onKeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Peso (kg):</label>
+                        <input type="text" class="form-control" formControlName="weight" maxlength="8" placeholder="Peso del artista" onKeypress="if (event.keyCode < 46 || event.keyCode > 57 || event.keyCode == 47) event.returnValue = false;">
+                    </div>
+                </div>
+                <div *ngIf="src" style="display:flex; justify-content: center;">
+                    <img [src]="src" alt="" width="300px">
+                </div>
+            </div>
+            <br>
+            <div class="btn-group" role="group" aria-label="" style="display: flex; justify-content: end;">
+                <button type="submit" class="btn btn-success">Actualizar</button>
+                <button type="button" class="btn btn-primary" routerLink="/artists">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
