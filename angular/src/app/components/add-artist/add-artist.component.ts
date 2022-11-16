@@ -11,7 +11,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class AddArtistComponent implements OnInit {
   formularioArtista:FormGroup;
-  public previsualizacion!: string;
+  public previsualizacion!: String;
 
   constructor(
     public formulario:FormBuilder,
@@ -67,5 +67,5 @@ export class AddArtistComponent implements OnInit {
     } catch (e) {
       console.log(e);
     }
-  })
+  });
 }

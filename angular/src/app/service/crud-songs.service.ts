@@ -9,7 +9,7 @@ import { Song } from './Song';
 
 export class CrudSongsService {
 
-  API='http://localhost/gmmtv/';
+  API='http://localhost/gmmtv/database/';
 
   constructor(private http:HttpClient) { }
 

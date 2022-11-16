@@ -22,6 +22,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AddArtistComponent } from './components/add-artist/add-artist.component';
+import { GalerySeriesComponent } from './components-client/galery-series/galery-series.component';
+import { GaleryArtistsComponent } from './components-client/galery-artists/galery-artists.component';
+import { GalerySongsComponent } from './components-client/galery-songs/galery-songs.component';
+import { SerieComponent } from './components-client/serie/serie.component';
+import { ArtistComponent } from './components-client/artist/artist.component';
+import { SongComponent } from './components-client/song/song.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +42,13 @@ import { AddArtistComponent } from './components/add-artist/add-artist.component
     AddSongComponent,
     EditSongComponent,
     FooterComponent,
-    AddArtistComponent
+    AddArtistComponent,
+    GalerySeriesComponent,
+    GaleryArtistsComponent,
+    GalerySongsComponent,
+    SerieComponent,
+    ArtistComponent,
+    SongComponent
   ],
   imports: [
     BrowserModule,

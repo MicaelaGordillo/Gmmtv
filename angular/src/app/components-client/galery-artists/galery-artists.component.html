@@ -1,0 +1,8 @@
+<div class="artistas" *ngIf="artistas">
+    <div class="card" *ngFor="let a of artistas; let iControl = index">
+        <img class="card-img-top" src="{{a.picture}}" alt={{a.name}}>
+        <div class="card-body">
+          <h4 class="card-title" routerLink="/artist/{{a.artist_id}}">{{a.name}}</h4>
+        </div>
+    </div>
+</div>

@@ -12,7 +12,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 
 export class AddSeriesComponent implements OnInit {
   formularioSerie:FormGroup;
-  public previsualizacion!: string;
+  public previsualizacion!: String;
 
   constructor(
     public formulario:FormBuilder,
@@ -32,10 +32,9 @@ export class AddSeriesComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  enviarDatosSerie():any{
+  async enviarDatosSerie(){
     this.formularioSerie.value.poster = this.previsualizacion;
     this.crudSeriesService.insertarSerie(this.formularioSerie.value).subscribe();
     this.route.navigateByUrl('/series');
@@ -69,5 +68,5 @@ export class AddSeriesComponent implements OnInit {
     } catch (e) {
       console.log(e);
     }
-  })
+  });
 }

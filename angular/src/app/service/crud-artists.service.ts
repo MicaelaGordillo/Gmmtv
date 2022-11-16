@@ -8,7 +8,7 @@ import { Artist } from './Artist';
 })
 export class CrudArtistsService {
   
-  API='http://localhost/gmmtv/';
+  API='http://localhost/gmmtv/database/';
 
   constructor(private http:HttpClient) { }
 

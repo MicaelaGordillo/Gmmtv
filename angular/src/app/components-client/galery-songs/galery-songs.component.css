@@ -1,0 +1,21 @@
+.songs {
+    background: linear-gradient(180deg,#3280a7 0,#41bae7 31%,#41bae7 37%,#2a3e71 100%);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+}
+.card-song {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: inherit;
+    padding: 20px 50px;
+    border-bottom: 1px solid white;
+}
+.informacion {
+    display: flex;
+    align-items: center;
+}
+h4 {
+    font-family: built_titling_sb;
+}

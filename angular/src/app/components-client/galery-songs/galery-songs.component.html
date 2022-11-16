@@ -1,0 +1,13 @@
+<div class="songs" *ngIf="songs">
+    <div class="card-song" *ngFor="let s of songs; let iControl = index">
+        <div class="video">
+            <iframe style="border-radius: 10px;" width="555" height="310" [src]="srcVideo(iControl)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="informacion">
+            <div>    
+                <h4 routerLink="/song/{{s.song_id}}">{{s.name}}</h4>
+                <p>{{s.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

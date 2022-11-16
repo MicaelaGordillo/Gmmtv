@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="formularioCancion">
+            <div *ngIf="src" style="display:flex; justify-content: center;">
+                <iframe style="border-radius: 10px;" width="1000" height="560" [src]="src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="mb-3" style="margin-top: 20px;">
+                <input type="text" style="font-size: 40px; font-family: built_titling_sb;" class="input-info" formControlName="name" readonly>
+            </div>
+            <div class="mb-3">
+                <textarea id="descripcion" style="resize: none;" class="input-info" formControlName="description" readonly></textarea>
+            </div>
+        </form>
+    </div>
+</div>

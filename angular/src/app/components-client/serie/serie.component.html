@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="formularioSerie">
+            <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div *ngIf="src" style="display:flex; justify-content: center;">
+                    <img [src]="src" alt="" width="50%">
+                </div>
+                <div>
+                    <div class="mb-3">
+                        <input type="text" style="font-size: 40px;" class="input-info" formControlName="title" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Género de la serie:</label>
+                        <input type="text" class="input-info" formControlName="gender" readonly>
+                    </div>
+                    <div class="mb-3">
+                    <label class="form-label">Cantidad de episodios:</label>
+                    <input type="number" class="input-info" formControlName="episodes" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Periodo de emisión:</label>
+                        <input type="text" class="input-info" formControlName="issuance_period" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Sinopsis</label>
+                <textarea id="sinopsis" style="resize: none;" class="input-info" formControlName="synopsis" readonly></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Link de la serie:</label>
+                <input type="text" class="input-info" formControlName="link" readonly>
+            </div>
+        </form>
+    </div>
+</div>

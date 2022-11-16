@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="formularioArtista">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0px;">
+                <div>
+                    <div class="mb-3">
+                        <input type="text" style="font-size: 40px;" class="input-info" formControlName="name" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha de nacimiento:</label>
+                        <input type="text" class="input-info" formControlName="date_of_birth" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Lugar de nacimiento:</label>
+                        <input type="text" class="input-info" formControlName="place_of_birth" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Estatura (cm):</label>
+                        <input type="text" class="input-info" formControlName="height" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Peso (kg):</label>
+                        <input type="text" class="input-info" formControlName="weight" readonly>
+                    </div>
+                </div>
+                <div *ngIf="src" style="display:flex; justify-content: center;">
+                    <img [src]="src" alt="" width="300px">
+                </div>
+            </div>
+            <br>
+        </form>
+    </div>
+</div>

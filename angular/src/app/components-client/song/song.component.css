@@ -1,0 +1,14 @@
+.card {
+    background: linear-gradient(180deg,#3280a7 0,#41bae7 31%,#41bae7 37%,#2a3e71 100%);
+}
+.card-body {
+    padding: 25px 150px;
+}
+.input-info {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background-color: inherit;
+    outline: none;
+    border: 0;
+}

@@ -9,7 +9,7 @@ import { Serie } from './Serie';
 
 export class CrudSeriesService {
 
-  API='http://localhost/gmmtv/';
+  API='http://localhost/gmmtv/database/';
 
   constructor(private http:HttpClient) {}
 
