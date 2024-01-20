@@ -2,6 +2,8 @@
 Este proyecto consiste en la creación de un sitio web para la empresa productora GMMTV. El sitio web incluye secciones como Inicio, Series, Canciones y Artistas, con vistas de usuario y administrador.
 
 Angular | TypeScript | MySQL
+
+By Micaela Gordillo 🌸
 ## Funcionalidades
 ### Vista del Usuario
 1. **Inicio:**
